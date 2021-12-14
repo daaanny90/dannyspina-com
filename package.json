@@ -1,0 +1,18 @@
+{
+  "name": "dannyspina-markdown",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@vue/composition-api": "^1.4.1",
+    "gridsome": "^0.7.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "sass": "^1.45.0",
+    "sass-loader": "^10.1.1"
+  }
+}

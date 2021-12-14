@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400;600&family=Julius+Sans+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Crimson+Pro:wght@200;400;600&family=Julius+Sans+One&display=swap');
+
+$primary: #ffffff;
+$secondary: #ff934f;
+$accent: #c2e812;
+$font: #333333;
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $primary;
+  height: 100%;
+  font-family: 'Crimson Pro', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bakbak One', cursive;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.inner-container {
+  padding: 0 5rem 3rem;
+  overflow-y: scroll;
+}
