@@ -1,54 +1,41 @@
 <template>
-  <div class="sidebar-container" :class="sidebarStatus ? 'active' : ''">
-    <g-link class="nav__link" to="/">Home</g-link>
+  <div class="sidebar-container">
     <g-link class="nav__link" to="/about/">About</g-link>
-
-    <p class="sidebar-toggle-button" @click="sidebarToggle">close</p>
+    <g-link class="nav__link" to="/">Home</g-link>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      sidebarStatus: false,
-    };
-  },
-  methods: {
-    sidebarToggle() {
-      this.$store.commit("TOGGLE_MENU", false);
-    },
-  },
-  mounted() {
-    document.addEventListener('click', function() {})
-  },
-  watch: {
-    "$store.state.menuStatus"(bool) {
-      this.sidebarStatus = bool;
-    },
-  },
+  name: "Sidebar",
 };
 </script>
 
 <style lang="scss" scoped>
-.sidebar-toggle-button {
-  cursor: pointer;
-}
 
 .sidebar-container {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 0;
-  left: -100%;
-  width: 300px;
+  left: 0;
+  width: 50px;
   height: 100%;
-  background: #939f5c;
+  background: $secondary;
   color: #333;
   transition: all 0.5s;
+  writing-mode: vertical-lr;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 
   &.active {
     left: 0;
     transition: all 0.5s;
+  }
+
+  .nav-link {
+    margin: 0 0 25px 0px;
   }
 }
 </style>

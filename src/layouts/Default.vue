@@ -3,7 +3,6 @@
     <Sidebar />
     <transition name="fade" appear>
       <main class="main-container">
-      <span class="sidebar-toggle-button" @click="sidebarToggle">Open</span>
         <slot/>
       </main>
     </transition>
@@ -17,9 +16,6 @@ export default {
     Sidebar
   },
   methods: {
-    sidebarToggle() {
-      this.$store.commit("TOGGLE_MENU", true);
-    }
   }
 }
 </script>
@@ -51,7 +47,7 @@ body {
 
 .layout {
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 70px;
   padding-right: 20px;
   height: 100%;
 }

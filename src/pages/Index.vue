@@ -18,7 +18,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url("./../global/global.scss");
 .home-links a {
   margin-right: 1rem;
 }
