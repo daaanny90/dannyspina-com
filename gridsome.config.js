@@ -1,7 +1,7 @@
 // Changes here require a server restart.
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Danny Spina',
   plugins: [
     {
       use: 'gridsome-plugin-sass-resources-loader',
